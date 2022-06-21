@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">prototipo_shop</string>
+    <string name="cads">Cadastrar</string>
+    <string name="Log">Login</string>
+    <string name="esq">Esqueceu a senha?</string>
+    <string name="out">Outras Formas de login</string>
+    <string name="Ter">Privacy policy - Terms of Use</string>
+</resources>
