@@ -5,4 +5,5 @@
     <string name="esq">Esqueceu a senha?</string>
     <string name="out">Outras Formas de login</string>
     <string name="Ter">Privacy policy - Terms of Use</string>
+    <string name="titleCadastro">Cadastrar</string>
 </resources>
