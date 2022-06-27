@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class formLogin extends AppCompatActivity {
 
-    private TextView text_Tcadastro;
+    private TextView text_telaCadastro;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +19,9 @@ public class formLogin extends AppCompatActivity {
         setContentView(R.layout.activity_form_login);
 
         getSupportActionBar().hide();
-        IniciarComp();
-        text_Tcadastro.setOnClickListener(new View.OnClickListener() {
+        IniciarComponentes();
+
+        text_telaCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -27,7 +30,7 @@ public class formLogin extends AppCompatActivity {
             }
         });
     }
-    private void IniciarComp(){
-        text_Tcadastro = findViewById(R.id.textCadastro);
+    private void IniciarComponentes(){
+        text_telaCadastro = findViewById(R.id.textCadastro);
     }
 }

@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prototipo_shop">
         <activity
+            android:name=".PagPrincipal"
+            android:exported="false" />
+        <activity
             android:name=".FormCadastro"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".formLogin"
             android:exported="false" />
         <activity
-            android:name=".formLogin"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
