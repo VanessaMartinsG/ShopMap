@@ -1,5 +1,5 @@
 # ShopMap
-Desenvolvimento de aplicativo mobile para localização de lojas dentro dos shopping's de Salvador.
+Desenvolvimento de aplicativo mobile para localização de lojas dentro dos shoppings de Salvador.
 
 O ShopMap oferece a opção de listagem de shoppings e suas respectivas lojas presentes neles. A partir dessas listagens podem ser encontradas promoções disponíveis e anunciadas pelas lojas. Para cada shopping é disponibilizada a opção de mapeamento interno(indoor) em 2D ou 3D, fornecendo uma interatividade e conforto de localização para o usuário.
 Cada shopping ou loja pode ser favoritado pelo usário, existindo dessa forma uma lista dos mais gostados para acessos futuros e constantes.
