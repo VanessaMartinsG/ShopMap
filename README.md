@@ -48,3 +48,5 @@
  Nesta fase do protótipo temos a representação fiel de fluxo e estrutura das interfaces, podendo ser facilmente percebida de forma mais ampla a experiência do aplicativo.
  
  ![image](https://user-images.githubusercontent.com/45729000/176351450-e7736c2b-45d1-4556-9b1f-561e79b5598f.png)
+
+#### Desenvolvido por: Vanessa Martins, Jadson Nobre e Aurelicio Pereira
