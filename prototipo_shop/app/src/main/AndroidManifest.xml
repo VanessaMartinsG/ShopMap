@@ -16,10 +16,10 @@
             android:name=".FormCadastro"
             android:exported="false" />
         <activity
-            android:name=".formLogin"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".formLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
