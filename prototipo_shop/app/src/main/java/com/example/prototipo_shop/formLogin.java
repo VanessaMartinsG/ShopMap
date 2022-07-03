@@ -32,8 +32,6 @@ public class formLogin extends AppCompatActivity {
         getSupportActionBar().hide();
         IniciarComponentes();
         UsuarioValue usuario = new UsuarioValue();
-        usuario.setEmail("malu");
-        usuario.setSenha("123");
         db.todos();
        if (db.autenticar(usuario) == null){
            Log.i("Debug Login", "usuario não logado");
@@ -56,7 +54,7 @@ public class formLogin extends AppCompatActivity {
             public void onClick(View v) {
                 String email = edit_email.getText().toString();
                 String senha = edit_senha.getText().toString();
-                UsuarioValue usuario = LogarUsuario();
+                UsuarioValue usuario = LogarUsuario(email, senha);
                 if(usuario == null) {
                     Snackbar snackbar = Snackbar.make(v, "Usuário não cadastrado", Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.BLACK);
@@ -75,10 +73,10 @@ public class formLogin extends AppCompatActivity {
         });
     }
 
-    private UsuarioValue LogarUsuario(){
+    private UsuarioValue LogarUsuario( String email, String senha){
 
-        String email = edit_email.getText().toString();
-        String senha = edit_senha.getText().toString();
+        /*String email = edit_email.getText().toString();
+        String senha = edit_senha.getText().toString();*/
         UsuarioValue usuario = new UsuarioValue();
         usuario.setEmail(email);
         usuario.setSenha(senha);

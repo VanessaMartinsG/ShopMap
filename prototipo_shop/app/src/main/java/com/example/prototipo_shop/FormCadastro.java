@@ -31,13 +31,13 @@ public class FormCadastro extends AppCompatActivity {
         getSupportActionBar().hide();
         IniciarComponentesCadastro();
 
-        image_backPage.setOnClickListener(new View.OnClickListener() {
+        /*image_backPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FormCadastro.this,formLogin.class);
                 startActivity(intent);
             }
-        });
+        });*/
         bt_cadastrar.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override
@@ -47,8 +47,11 @@ public class FormCadastro extends AppCompatActivity {
                 String dataNascimento = edit_dataNascimento.getText().toString();
                 String senha = edit_senha.getText().toString();
                 String senhaconfirmar = edit_senhaconfirmar.getText().toString();
-
-                String [] mensagens = {"Preencha todos os campos","Cadastro realizado com sucesso", "A senha está diferente."};
+                Log.i("Cadastrar", email);
+                if(email == null){
+                    Log.i("Cadastrar", "NULO");
+                }
+                String [] mensagens = {"Preencha todos os campos","Cadastro realizado com sucesso", "A senha está diferente.", "Este email ja existe."};
 
                 if(nome.isEmpty() || email.isEmpty() || dataNascimento.isEmpty() || senha.isEmpty() || senhaconfirmar.isEmpty()) {
                     Snackbar snackbar = Snackbar.make(v, mensagens[0], Snackbar.LENGTH_SHORT);
@@ -63,30 +66,30 @@ public class FormCadastro extends AppCompatActivity {
                     snackbar.show();
                 }
                 else{
-                    CadastrarUsuario();
-                    Snackbar snackbar = Snackbar.make(v, mensagens[1], Snackbar.LENGTH_SHORT);
-                    snackbar.setBackgroundTint(Color.BLACK);
-                    snackbar.setTextColor(Color.WHITE);
-                    snackbar.show();
-                    Intent intent = new Intent(FormCadastro.this,formLogin.class);
-                    startActivity(intent);
+                    if(db.verificaEmail(email) == false){
+                        Snackbar snackbar = Snackbar.make(v, mensagens[3], Snackbar.LENGTH_SHORT);
+                        snackbar.setBackgroundTint(Color.BLACK);
+                        snackbar.setTextColor(Color.WHITE);
+                        snackbar.show();
+                    }
+                    else {
+                        CadastrarUsuario(nome, email, dataNascimento, senha);
+                        Snackbar snackbar = Snackbar.make(v, mensagens[1], Snackbar.LENGTH_SHORT);
+                        snackbar.setBackgroundTint(Color.BLACK);
+                        snackbar.setTextColor(Color.WHITE);
+                        snackbar.show();
+                        Intent intent = new Intent(FormCadastro.this, formLogin.class);
+                        startActivity(intent);
+                    }
                 }
             }
         });
     }
-    private void CadastrarUsuario(){
+    private void CadastrarUsuario(String nome, String email, String dataNascimento, String senha){
+        Log.d("Cadastrar",email);
+        Log.d("Cadastrar:", senha);
 
-        String nome = edit_nome.getText().toString();
-        String email = edit_email.getText().toString();
-        String dataNascimento = edit_dataNascimento.getText().toString();
-        String senha = edit_senha.getText().toString();
-
-        UsuarioValue usuario = new UsuarioValue();
-        usuario.setNome(nome);
-        usuario.setEmail(email);
-        usuario.setDataNascimento(dataNascimento);
-        usuario.setSenha(senha);
-        db.addUsuario(usuario);
+        db.salvar(nome, email, dataNascimento, senha);
     }
 
     private void IniciarComponentesCadastro(){
