@@ -30,7 +30,7 @@
         style="@style/campo_text"
         android:layout_marginTop="312dp"
         android:drawableRight="@drawable/iceye"
-        android:hint="@string/senha"
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -58,7 +58,7 @@
         android:layout_marginTop="228dp"
         android:drawableRight="@drawable/icemail"
         android:inputType="textEmailAddress"
-        android:hint="@string/email"
+        android:hint="Usuário ou Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,9 +146,9 @@
         android:textSize="20dp"
         android:textStyle="bold"
 
-
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

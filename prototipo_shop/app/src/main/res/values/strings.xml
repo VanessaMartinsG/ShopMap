@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ShopMap</string>
+    <string name="app_name">prototipo_shop</string>
     <string name="cads">Cadastrar</string>
     <string name="Log">Login</string>
     <string name="esq">Esqueceu a senha?</string>
@@ -11,13 +11,8 @@
     <string name="cupons">Cupons</string>
     <string name="configuracao">Configurações</string>
     <string name="sair">Sair</string>
-    <string name="nome">Entrar</string>
-    <string name="sobrenome"></string>
-    <string name="nomeCompleto">Nome Completo</string>
-    <string name="email">Email</string>
-    <string name="dataNascimento">Data de Nascimento</string>
-    <string name="senha">Senha</string>
-    <string name="confirmarSenha">Confirmar Senha</string>
+    <string name="nome">Joao Malaquias</string>
+    <string name="sobrenome">Malaquias</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
