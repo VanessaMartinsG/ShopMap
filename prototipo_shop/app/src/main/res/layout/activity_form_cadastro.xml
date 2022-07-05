@@ -40,7 +40,7 @@
     <EditText
         android:id="@+id/nomeCompleto"
         style="@style/campo_text"
-        android:hint="Nome Completo"
+        android:hint="@string/nomeCompleto"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
     <EditText
         android:id="@+id/nomeEmail"
         style="@style/campo_text"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -63,7 +63,7 @@
     <EditText
         android:id="@+id/dataNascimento"
         style="@style/campo_text"
-        android:hint="Data de Nascimento"
+        android:hint="@string/dataNascimento"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
     <EditText
         android:id="@+id/senha"
         style="@style/campo_text"
-        android:hint="Senha"
+        android:hint="@string/senha"
         android:inputType="textPassword"
         android:drawableRight="@drawable/iceye"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +86,7 @@
     <EditText
         android:id="@+id/senhaConfirmar"
         style="@style/campo_text"
-        android:hint="Confirmar Senha"
+        android:hint="@string/confirmarSenha"
         android:inputType="textPassword"
         android:drawableRight="@drawable/iceye"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +98,7 @@
     <androidx.appcompat.widget.AppCompatButton
         style="@style/button"
         android:id="@+id/cadastrar"
-        android:text="Cadastrar"
+        android:text="@string/titleCadastro"
         android:textSize="20dp"
         android:width="170dp"
         app:layout_constraintTop_toBottomOf="@+id/senhaConfirmar"

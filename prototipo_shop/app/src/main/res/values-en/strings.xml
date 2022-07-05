@@ -14,4 +14,9 @@
     <string name="sair">Log out</string>
     <string name="nome">Joao Malaquias</string>
     <string name="sobrenome">Malaquias</string>
+    <string name="nomeCompleto">Full Names</string>
+    <string name="email">Email</string>
+    <string name="dataNascimento">Birth Date</string>
+    <string name="senha">Password</string>
+    <string name="confirmarSenha">Confirm Password</string>
 </resources>

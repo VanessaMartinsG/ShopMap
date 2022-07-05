@@ -31,13 +31,13 @@ public class FormCadastro extends AppCompatActivity {
         getSupportActionBar().hide();
         IniciarComponentesCadastro();
 
-        /*image_backPage.setOnClickListener(new View.OnClickListener() {
+        image_backPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FormCadastro.this,formLogin.class);
                 startActivity(intent);
             }
-        });*/
+        });
         bt_cadastrar.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override

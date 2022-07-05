@@ -13,6 +13,11 @@
     <string name="sair">Sair</string>
     <string name="nome">Entrar</string>
     <string name="sobrenome"></string>
+    <string name="nomeCompleto">Nome Completo</string>
+    <string name="email">Email</string>
+    <string name="dataNascimento">Data de Nascimento</string>
+    <string name="senha">Senha</string>
+    <string name="confirmarSenha">Confirmar Senha</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
