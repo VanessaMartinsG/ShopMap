@@ -53,3 +53,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore'
 
 }
+
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+} 
