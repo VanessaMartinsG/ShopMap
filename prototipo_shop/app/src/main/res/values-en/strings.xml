@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShopMap</string>
+    <string name="cads">Register</string>
+    <string name="Log">Login</string>
+    <string name="esq">Forgot passwords?</string>
+    <string name="out">Other forms of login</string>
+    <string name="titleCadastro">Register</string>
+    <string name="Ter">Privacy policy - Terms of Use</string>
+    <string name="perfil">Profile</string>
+    <string name="favoritos">Favorites</string>
+    <string name="cupons">Coupons</string>
+    <string name="configuracao">Settings</string>
+    <string name="sair">Log out</string>
+    <string name="nome">Joao Malaquias</string>
+    <string name="sobrenome">Malaquias</string>
+</resources>
