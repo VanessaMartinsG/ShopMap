@@ -40,60 +40,60 @@
     <EditText
         android:id="@+id/nomeCompleto"
         style="@style/campo_text"
+        android:layout_marginTop="55dp"
         android:hint="@string/nomeCompleto"
         android:inputType="text"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="#7A2B0B63"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="55dp"
-        app:layout_constraintTop_toBottomOf="@+id/titleCadastro"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCadastro" />
 
     <EditText
         android:id="@+id/nomeEmail"
         style="@style/campo_text"
+        android:layout_marginTop="35dp"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        android:textColorHint="#7A2B0B63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="260dp"
-        android:layout_marginTop="35dp"
-        app:layout_constraintTop_toBottomOf="@+id/nomeCompleto"/>
+        app:layout_constraintTop_toBottomOf="@+id/nomeCompleto" />
 
     <EditText
         android:id="@+id/dataNascimento"
         style="@style/campo_text"
+        android:layout_marginTop="35dp"
         android:hint="@string/dataNascimento"
         android:inputType="date"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="#7A2B0B63"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="35dp"
-        app:layout_constraintTop_toBottomOf="@+id/nomeEmail"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeEmail" />
 
     <EditText
         android:id="@+id/senha"
         style="@style/campo_text"
+        android:layout_marginTop="35dp"
+        android:drawableRight="@drawable/iceye"
         android:hint="@string/senha"
         android:inputType="textPassword"
-        android:drawableRight="@drawable/iceye"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="#7A2B0B63"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="35dp"
-        app:layout_constraintTop_toBottomOf="@+id/dataNascimento"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataNascimento" />
 
     <EditText
         android:id="@+id/senhaConfirmar"
         style="@style/campo_text"
+        android:layout_marginTop="35dp"
+        android:drawableRight="@drawable/iceye"
         android:hint="@string/confirmarSenha"
         android:inputType="textPassword"
-        android:drawableRight="@drawable/iceye"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="#7A2B0B63"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="35dp"
-        app:layout_constraintTop_toBottomOf="@+id/senha"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha" />
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/button"
