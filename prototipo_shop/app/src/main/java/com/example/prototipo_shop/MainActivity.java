@@ -19,6 +19,8 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.example.prototipo_shop.ShoppingDAO;
+import com.example.prototipo_shop.ShoppingValue;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +29,30 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+        ShoppingDAO shoppingdao = new ShoppingDAO(this);
+
+
+        //shoppingdao.drop();
+        ShoppingValue shoppingvalue = new ShoppingValue();
+        shoppingvalue.setNome("Shopping Salvador");
+        shoppingvalue.setFav("0");
+        shoppingdao.CadastrarShop("Shopping Salvador","0");
+        shoppingdao.close();
+/*
+        ShoppingValue shoppingvalue2 = new ShoppingValue();
+        shoppingvalue2.setNome("Shopping da Bahia");
+        shoppingvalue2.setFav(0);
+        shoppingdao.CadastrarShop(shoppingvalue2);
+
+
+        ShoppingValue shoppingvalue3 = new ShoppingValue();
+        shoppingvalue3.setNome("Shopping Bella Vista");
+        shoppingvalue3.setFav(0);
+        shoppingdao.CadastrarShop(shoppingvalue3);
+        shoppingdao.close();*/
+
         if(checkAndRequestPermissions()){
         }
         getSupportActionBar().hide();

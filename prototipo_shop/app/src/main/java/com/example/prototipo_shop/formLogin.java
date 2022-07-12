@@ -63,6 +63,8 @@ public class formLogin extends AppCompatActivity {
                     Log.i("Debug Login", "usuario não logado");
                 }
                 else{
+                    Intent intent = new Intent(formLogin.this,MainActivity.class);
+                    startActivity(intent);
                     Log.i("Debug Login", usuario.getEmail());
                     Snackbar snackbar = Snackbar.make(v, usuario.getEmail(), Snackbar.LENGTH_SHORT);
                     snackbar.setBackgroundTint(Color.BLACK);
@@ -72,6 +74,7 @@ public class formLogin extends AppCompatActivity {
             }
         });
     }
+
 
     private UsuarioValue LogarUsuario( String email, String senha){
 

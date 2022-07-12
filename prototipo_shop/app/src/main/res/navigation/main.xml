@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    app:startDestination="@id/perfil">
+    app:startDestination="@id/pgFragment">
 
     <fragment
         android:id="@+id/configuracao"
@@ -25,4 +25,11 @@
         android:name="com.example.prototipo_shop.PerfilFragment"
         android:label="Perfil"
         tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/pgFragment"
+        android:name="com.example.prototipo_shop.pgFragment"
+        android:label="fragment_pg"
+        tools:layout="@layout/fragment_pg" />
+
+
 </navigation>
